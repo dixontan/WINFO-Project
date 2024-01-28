@@ -89,19 +89,3 @@ export const carbonProduced = (a: article): number => {
         partialCarbonProduced(a.wool_area[0], a.wool_area[1], wool_carbon) + 
         partialCarbonProduced(a.polyester_area[0], a.polyester_area[1], polyester_carbon)) * 100)) / 100;
 }
-
-/**
- * Gets the square meters of fabric used to create certain articles
- * of clothing.
- * @param input A string representing a shirt, tshirt or pants.
- * @returns the square meters used to make the article of clothing
- */
-export const fabricSize = (input: "shirt" | "tshirt" | "pants"): number => {
-    if(input === 'shirt') {
-        return SHIRT;
-    } else if(input === "tshirt") {
-        return TSHIRT;
-    } else {
-        return PANTS;
-    }
-}
