@@ -16,7 +16,9 @@
     "react-native-camera": "^4.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.8"
   },
   "private": true
 }
